@@ -8,6 +8,8 @@ The full configurable core's current 156.25 MHz out-of-context build **does not 
 
 **Using the college Basys 3:** start with the [board demo guide](boards/basys3/README.md). It generates packets internally, lets you select cases with switches, and displays BUY/SELL/HOLD/rejection on LEDs. The board has no onboard Ethernet interface.
 
+**Board demonstration:** [Watch the Basys 3 video](media/basys3-board-demo.mp4) (approximately 40 seconds, recorded September 16, 2026). The original recording shows LEDs and the display responding during initial hardware bring-up. It uses internally generated packets; the clip does not establish physical 10G throughput or completion of all eight acceptance cases. See the [observations and next tests](docs/board-bringup.md).
+
 ```mermaid
 flowchart LR
     A[10G PHY and MAC<br/>vendor IP] --> B[MAC status adapter]

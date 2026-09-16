@@ -4,7 +4,7 @@ Status recorded on 2026-09-17, following review of a user-supplied Basys 3 video
 
 The approximately 40-second recording shows an active Basys 3 with changing LEDs and a seven-segment count that increases during part of the demonstration and remains unchanged during another part. This is consistent with initial operation of the demo. Some controls are obscured by a hand, so the recording does not establish the selected input and expected result for every packet case. It also does not independently identify the loaded bitstream or measure clock frequency, latency or network throughput.
 
-The following controlled test is **pending**, not a list of measured passing results. No video or personal media is included in this repository.
+The [original board video](../media/basys3-board-demo.mp4) is included with the project owner's authorization. The following controlled test is **pending**, not a list of measured passing results.
 
 ## Acceptance sequence
 
