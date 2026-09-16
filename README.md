@@ -53,6 +53,15 @@ python tools/check.py
 
 On Linux, `make test` and `make demo` are equivalent. Optional independent lint uses `python -m pip install pyslang==11.0.0` followed by `python tools/lint.py`. Generic synthesis uses `make synth` with Yosys. See the [tool sources](docs/sources.md) for installation references.
 
+For the same synthesis version used by the saved local results and GitHub Actions, run:
+
+```text
+python -m pip install yowasp-yosys==0.69.0.0.post1233
+yowasp-yosys -l build/synthesis.log scripts/synth.ys
+```
+
+Run the tests first to create `build/`. Older distribution packages, including Yosys 0.33, cannot parse the SystemVerilog integer casts used in this design. The GitHub workflow pins the verified synthesis tool version.
+
 ## What is implemented
 
 | Capability | Implementation |
