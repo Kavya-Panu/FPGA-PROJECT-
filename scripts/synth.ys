@@ -1,0 +1,9 @@
+# Run from repository root: yosys -l build/synthesis.log scripts/synth.ys
+# This is technology-independent synthesis, not FPGA place-and-route.
+read_verilog -sv rtl/event_fifo.sv rtl/mac_rx_adapter.sv rtl/market_data_parser.sv rtl/symbol_match_engine.sv rtl/tick_to_trade.sv
+hierarchy -check -top tick_to_trade
+synth -top tick_to_trade -noabc
+check -assert
+stat
+tee -o build/synthesis-stat.json stat -json
+write_json build/netlist.json

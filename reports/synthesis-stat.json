@@ -1,0 +1,122 @@
+{
+   "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, Clang /workspace/YoWASP/yosys/wasi-sdk-33.0-x86_64-linux/share/cmake/../..//bin/clang++ 22.1.0)",
+   "invocation": "stat -json ",
+   "modules": {
+      "$paramod\\market_data_parser\\UDP_PORT=16'0000010011010010": {
+         "num_wires":         681,
+         "num_wire_bits":     3306,
+         "num_pub_wires":     52,
+         "num_pub_wire_bits": 1336,
+         "num_ports":         16,
+         "num_port_bits":     335,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2673,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_AND_": 647,
+            "$_MUX_": 477,
+            "$_NOT_": 56,
+            "$_OR_": 421,
+            "$_SDFFE_PP0P_": 693,
+            "$_SDFFE_PP1P_": 3,
+            "$_SDFF_PP0_": 2,
+            "$_XOR_": 374
+         }
+      },
+      "$paramod$31e32191c3ac727faf2b0ea41967e309065ce75b\\symbol_match_engine": {
+         "num_wires":         1459,
+         "num_wire_bits":     7121,
+         "num_pub_wires":     60,
+         "num_pub_wire_bits": 1782,
+         "num_ports":         23,
+         "num_port_bits":     527,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6121,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_AND_": 1754,
+            "$_MUX_": 94,
+            "$_NOT_": 604,
+            "$_OR_": 1101,
+            "$_SDFFCE_PN0P_": 1024,
+            "$_SDFFE_PP0P_": 421,
+            "$_SDFF_PP0_": 3,
+            "$_XOR_": 1120
+         }
+      },
+      "$paramod$1d98252764fcb8f3d0ae461ff25c84a3cb8a2e66\\event_fifo": {
+         "num_wires":         176,
+         "num_wire_bits":     6067,
+         "num_pub_wires":     30,
+         "num_pub_wire_bits": 3054,
+         "num_ports":         10,
+         "num_port_bits":     404,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5642,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_AND_": 158,
+            "$_DFFE_PP_": 2640,
+            "$_MUX_": 2653,
+            "$_NOT_": 16,
+            "$_OR_": 18,
+            "$_SDFFE_PP0P_": 77,
+            "$_SDFF_PP0_": 4,
+            "$_XOR_": 76
+         }
+      },
+      "\\tick_to_trade": {
+         "num_wires":         44,
+         "num_wire_bits":     1100,
+         "num_pub_wires":     44,
+         "num_pub_wire_bits": 1100,
+         "num_ports":         31,
+         "num_port_bits":     608,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         0,
+         "num_submodules":       3,
+         "num_cells_by_type": {
+            "$paramod$1d98252764fcb8f3d0ae461ff25c84a3cb8a2e66\\event_fifo": 1,
+            "$paramod$31e32191c3ac727faf2b0ea41967e309065ce75b\\symbol_match_engine": 1,
+            "$paramod\\market_data_parser\\UDP_PORT=16'0000010011010010": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         2360,
+         "num_wire_bits":     17594,
+         "num_pub_wires":     186,
+         "num_pub_wire_bits": 7272,
+         "num_ports":         80,
+         "num_port_bits":     1874,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         14436,
+         "num_submodules":       3,
+         "num_cells_by_type": {
+            "$_AND_": 2559,
+            "$_DFFE_PP_": 2640,
+            "$_MUX_": 3224,
+            "$_NOT_": 676,
+            "$_OR_": 1540,
+            "$_SDFFCE_PN0P_": 1024,
+            "$_SDFFE_PP0P_": 1191,
+            "$_SDFFE_PP1P_": 3,
+            "$_SDFF_PP0_": 9,
+            "$_XOR_": 1570,
+            "$paramod$1d98252764fcb8f3d0ae461ff25c84a3cb8a2e66\\event_fifo": 1,
+            "$paramod$31e32191c3ac727faf2b0ea41967e309065ce75b\\symbol_match_engine": 1,
+            "$paramod\\market_data_parser\\UDP_PORT=16'0000010011010010": 1
+         }
+      }
+}
+

@@ -1,0 +1,35 @@
+name: RTL verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  simulate-and-synthesize:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install open-source HDL tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog yosys
+          python -m pip install pyslang==11.0.0
+      - name: Check RTL with independent frontend
+        run: python tools/lint.py
+      - name: Run parameter matrix and FIFO stress tests
+        run: python tools/check.py
+      - name: Synthesize and reject structural errors
+        run: yosys -l build/synthesis.log scripts/synth.ys
+      - name: Generate demo and waveform
+        run: python tests/run.py --demo --waves
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-evidence
+          path: |
+            build/**/*.json
+            build/**/*.log
+            build/**/*.csv
+            build/demo/*.vcd
+            build/demo/*.pcap

@@ -1,0 +1,2 @@
+PASS cycles=29907 transfers=1137 table=3 fifo=3
+.\tests\tb_tick_to_trade.sv:70: $finish called at 191409000 (1ps)

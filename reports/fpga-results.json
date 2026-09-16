@@ -1,0 +1,51 @@
+{
+  "full_core_156mhz": {
+    "wns_ns": -0.414,
+    "tns_ns": -3.135,
+    "setup_failing_endpoints": 19,
+    "whs_ns": -0.602,
+    "ths_ns": -906.07,
+    "hold_failing_endpoints": 3454,
+    "wpws_ns": 1.95,
+    "slice_luts": 1131,
+    "slice_registers": 2228,
+    "timing_pass": false,
+    "part": "xc7a35tcpg236-1",
+    "tool": "Vivado 2025.1",
+    "period_ns": 6.4
+  },
+  "basys3_100mhz": {
+    "wns_ns": 0.676,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "whs_ns": 0.024,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "wpws_ns": 3.75,
+    "slice_luts": 575,
+    "slice_registers": 784,
+    "timing_pass": true,
+    "part": "xc7a35tcpg236-1",
+    "tool": "Vivado 2025.1",
+    "period_ns": 10.0,
+    "bitstream_sha256": "1214c51a48aab564778785196080e5309d9e82ce1e64300d887bc00f6d16440c",
+    "bitstream_bytes": 2192139
+  },
+  "source_sha256": {
+    "rtl/event_fifo.sv": "c52de699c56bec2fd867dcd68aa9f78bc62d305664e7915665ef633aa6aba645",
+    "rtl/mac_rx_adapter.sv": "bbf564251953ebc7675f762dcdfd129c07e6c33a9a7f18396e955e2747626437",
+    "rtl/market_data_parser.sv": "007260abf6a7df79aec40dfc8291f268dbbfa0eed6656ab2a8a01b5fcbaf06e0",
+    "rtl/symbol_match_engine.sv": "bbfa5ba5400617e6651308899482d56596674b3b55e708adc4ad4ed07ea34f4e",
+    "rtl/tick_to_trade.sv": "9e6c3f6c0b7a3b503bb59f00926d5e1c2f5017a4986d9b106154194ed35f5154",
+    "boards/basys3/basys3.xdc": "21105985f73c6dcaad1f2cdc6539a944cfa49dfa0bb4e47ec62d145518e07e40",
+    "boards/basys3/basys3_demo_top.sv": "6fa6a7b1db4277f31685ff2a09ba8069c441c62f856c8ebe14b52f8fe7988727",
+    "boards/basys3/basys3_packet_rom.sv": "00f584994e37cedad0791a19e8ecfeb19bd1167a04bdb1fc5ffd8c54be97b0c1",
+    "boards/basys3/generate_rom.py": "eafce693a83f1a883085997bc22733381c97bf2eb615daf2959dd5bf5037c732",
+    "boards/basys3/tb_basys3_demo.sv": "d1a4f32eda135c95e029e9fa6941d004c012abd043b51b6adea072610ac2ebc3",
+    "boards/basys3/test_demo.py": "c780d83c513f3961f4e1044ff3ddcb10dcb1297517f4ac3cd0a9bd9b4435f6ce",
+    "scripts/build_basys3.tcl": "8739d173306f8abf61911c5a4ef0fef1f4f30dd480e3ba5f4b9ee7afd99dbfe4",
+    "scripts/create_basys3_project.tcl": "9d3ca4f568a68c995627f27f3f3b1427a618f686eee470abc132f9b9456e5a3d",
+    "scripts/vivado_ooc.tcl": "5ebf9a0d0bad10ee6bc271a99dfefefe429fa705c11b5bc7285efdae08b9e398",
+    "constraints/core_ooc.xdc": "696043d1d8c0e6a6bdeb7ec990802275cc78924f0da2f291dc94a75112099f0f"
+  }
+}

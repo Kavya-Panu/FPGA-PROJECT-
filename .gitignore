@@ -1,0 +1,12 @@
+build/
+__pycache__/
+*.pyc
+.venv/
+.Xil/
+*.jou
+*.log
+*.str
+*.zip
+/clockInfo.txt
+/tight_setup_hold_pins.txt
+/dfx_runtime.txt

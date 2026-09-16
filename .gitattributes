@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.pcap binary
+*.bit binary
+# Preserve the exact generated ROM bytes fingerprinted in the build evidence.
+boards/basys3/basys3_packet_rom.sv -text whitespace=cr-at-eol

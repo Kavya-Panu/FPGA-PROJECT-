@@ -1,0 +1,17 @@
+PASS FIFO unit cycles=12000 depth=1
+.\tests\tb_event_fifo.sv:46: $finish called at 76804200 (1ps)
+
+PASS FIFO unit cycles=12000 depth=3
+.\tests\tb_event_fifo.sv:46: $finish called at 76804200 (1ps)
+
+PASS FIFO unit cycles=12000 depth=16
+.\tests\tb_event_fifo.sv:46: $finish called at 76804200 (1ps)
+
+PASS MAC adapter 8 control combinations, both status conventions
+.\tests\tb_mac_rx_adapter.sv:31: $finish called at 8000 (1ps)
+
+PASS checksum identity 262148 cases against arithmetic folding
+.\tests\tb_checksum.sv:31: $finish called at 0 (1ps)
+
+PASS Basys 3: 8 scenarios, event fields, debounce, held button, auto replay, reset and display scan
+.\boards\basys3\tb_basys3_demo.sv:75: $finish called at 673156000 (1ps)
