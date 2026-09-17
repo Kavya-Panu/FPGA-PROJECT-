@@ -22,6 +22,20 @@ flowchart LR
     I[Configuration in RX clock domain] --> E
 ```
 
+## Architecture and implemented timing
+
+Vivado screenshots of the Basys 3 demonstration, captured September 17, 2026.
+
+![Elaborated RTL: packet parser, parallel symbol matcher and event FIFO](media/rtl-architecture.png)
+
+The core validates packets, extracts tick fields, compares symbols and price thresholds, and buffers actionable events.
+
+![Implemented timing: setup slack +0.676 ns, hold slack +0.024 ns, zero failing endpoints](media/implemented-timing.png)
+
+![Implemented design clock summary: board_clk at 100 MHz with a 10 ns period](media/clock-summary.png)
+
+The routed Basys 3 demo meets its specified timing constraints at 100 MHz: setup slack **+0.676 ns**, hold slack **+0.024 ns**, and pulse-width slack **+3.750 ns**, with zero failing endpoints. These results apply to the internal-packet board demo with one configured AAPL row and optimized unused logic. They do not establish physical 10G Ethernet operation or timing closure of the full configurable core at 156.25 MHz. See the [FPGA validation report](reports/fpga-validation.md) for constraints, resources and scope.
+
 ## Run the demo
 
 On the computer where this project was created, the simulator has been prepared locally. Open PowerShell in this folder and run:
